@@ -58,14 +58,14 @@ function Home() {
   //function for updating a cookie on the list
   //also using Axios to call backend data to frontend
   const updateCookie = (id) => {
-    const newImgUrl = prompt("Enter Image Link Address: ");
+    // const newImgUrl = prompt("Enter Image Link Address: ");
     const newName = prompt("Enter New Cookie Name: ");
     const newPrice = prompt("Enter New Price: ");
     const newCount = prompt("Enter New Inventory: ");
 
     Axios.put("https://portfolio-project-seanfitz.herokuapp.com/update", {
       id: id,
-      newImgUrl: newImgUrl,
+      // newImgUrl: newImgUrl, //by commenting this out I am making it so that you cannot update the image
       newName: newName,
       newPrice: newPrice,
       newCount: newCount,
@@ -76,7 +76,8 @@ function Home() {
           return value._id === id
             ? {
                 _id: id,
-                imgUrl: newImgUrl,
+                // imgUrl: newImgUrl, //this was the old code for when you were allowed to update an image
+                imgUrl: imgUrl,
                 name: newName,
                 price: newPrice,
                 count: newCount,
