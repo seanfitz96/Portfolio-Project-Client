@@ -123,7 +123,7 @@ function SkillSet() {
         </div>
         <div className="listOfSkillSets">
         <div className="IndividualSkill">
-            Agile Methodology
+            Agile
             <StarIcon sx={{ color: "yellow", fontSize: 30, paddingLeft: 1}}/>
             <StarIcon sx={{ color: "yellow", fontSize: 30}}/>
             <StarIcon sx={{ color: "yellow", fontSize: 30}}/>
