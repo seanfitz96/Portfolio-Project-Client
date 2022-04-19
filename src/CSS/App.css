@@ -1,0 +1,14 @@
+/* CSS for the entire app page */
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS for the body of the page (body default) */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+

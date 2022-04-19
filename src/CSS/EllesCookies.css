@@ -1,0 +1,73 @@
+/* CSS for the entire EllesCookies page */
+.EllesCookiesWholePage {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* CSS for the background of the entire EllesCookies page */
+.backgroundForPage {
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+  border-bottom: solid;
+}
+
+/* CSS for the EllesCookiesTitleBackground */
+.EllesCookiesTitleBackground {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: "Alex Brush", cursive;
+  background-image: url("../Images/cookiesBackground.jpg");
+  border-top: solid;
+  border-bottom: solid;
+}
+
+/* CSS for the EllesCookiesTitle */
+.EllesCookiesTitle {
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+  border-radius: 40px;
+  border: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px;
+}
+
+/* CSS for spacing of the input boxes */
+.inputs {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+/* CSS for spacing of the add cookie button */
+.addNewCookieButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 35px;
+}
+
+/* CSS for entire custom add cookie button */
+.customAddCookieButton {
+  background-color: #fce043;
+  background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+}
+
+/* CSS for the entire list as a whole */
+.listOfCookies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 80px;
+  padding: 30px;
+}
+
+/* Even though we are not using this, we still need it */
+/* CSS for the entire card as a whole */
+/* .EntireCard {
+  border-style: solid;
+  border-radius: 5px;  
+  } */

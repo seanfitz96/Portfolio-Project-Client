@@ -1,0 +1,38 @@
+/* CSS for the entire Home page */
+.wholeHomePage {
+    display: flex;
+    flex-direction: column;
+    background-color: #59ddf3;
+    background-image: linear-gradient(315deg, #59ddf3 0%, #cb61f7 100%);
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.WelcomeTitle {
+    text-align: center;
+    margin: 25px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.SeansFace {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+  
+.FaceAvatar {
+    display: block;
+    width: 300px;
+    border-radius: 50%;
+    margin: auto;
+    border: solid;
+    border-width: 4px;
+}
+
+.dividerHome{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}

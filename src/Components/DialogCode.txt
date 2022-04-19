@@ -1,0 +1,71 @@
+This could still maybe work if I just update the backend because I did not do that
+and that's why this probably didn't work. Because when I updated one field, it would make
+the rest blank. So if all else fails then maybe try doing that.
+
+
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
+
+
+
+
+
+
+//This is the sliding animation for the dialog box
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
+
+//This is for the modal that I'm using for the update button
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+
+<CardActions>
+                    <Button onClick={handleOpen}>Update</Button>
+                    <Dialog
+                      open={open}
+                      TransitionComponent={Transition}
+                      keepMounted
+                      onClose={handleClose}
+                      aria-describedby="alert-dialog-slide-description"
+                    >
+                      <DialogTitle
+                        style={{ display: "flex", justifyContent: "center" }}
+                      >
+                        {"What Do You Want To Update?"}
+                      </DialogTitle>
+                      <DialogActions
+                        style={{ display: "flex", justifyContent: "center" }}
+                      >
+                        <Button
+                          onClick={() => {
+                            updateCookie(value._id);
+                          }}
+                        >
+                          The whole thing
+                        </Button>
+                      </DialogActions>
+                      <DialogActions
+                        style={{ display: "flex", justifyContent: "center" }}
+                      >
+                        <Button
+                        onClick={() => {
+                          updateCookieImage(value._id);
+                        }}
+                        >
+                          The Cookie's Image
+                        </Button>
+                      </DialogActions>
+                    </Dialog>
+                    <Button
+                      onClick={() => {
+                        deleteCookie(value._id);
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  </CardActions>
