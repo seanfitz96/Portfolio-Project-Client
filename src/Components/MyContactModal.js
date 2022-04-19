@@ -11,7 +11,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 300,
+  width: 250,
   bgcolor: "white",
   border: "3px solid #000",
   boxShadow: 24,
@@ -42,18 +42,18 @@ function MyContactModal() {
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <b style={{ display: "flex", justifyContent: "center" }}>
-              Contact Information
+              Contact Info
             </b>
           </Typography>
           <Typography id="modal-modal-description" textAlign="center">
             <p>
-              <b> Phone Number: </b> (864)-616-8677
+              (864)-616-8677
             </p>
           </Typography>
           <Divider />
           <Typography id="modal-modal-description" textAlign="center">
             <p>
-              <b> Email: </b> Seanfitzgerald1996@gmail.com
+              Seanfitzgerald1996@gmail.com
             </p>
           </Typography>
         </Box>
