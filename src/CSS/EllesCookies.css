@@ -20,7 +20,7 @@
   font-size: 60px;
   font-family: "Alex Brush", cursive;
   background-image: url("../Images/cookiesBackground.jpg");
-  border-top: solid;
+  /* border-top: solid; */
   border-bottom: solid;
 }
 
