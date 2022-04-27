@@ -218,7 +218,7 @@ function Home() {
 
 <div className="backgroundForPage">
   <div style={{textAlign: "center"}}>
-    <b>Attention: </b> The Elle's Cookies page is a Work In 
+    <u><b>Attention:</b></u> The Elle's Cookies page is a Work In 
     Progress. As of now, users that are on a moblie device will not be
     able to <b>ADD</b> a cookie, but they can 
     still <b>EDIT</b> and <b>DELETE</b> a cookie. If a user is on a
